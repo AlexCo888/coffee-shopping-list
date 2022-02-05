@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  color: rgb(249, 240, 255);
+  background-color: rgb(24, 24, 24);
+}
+
+h1 {
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  padding-left: 2.5rem;
+  text-indent: -2.5rem;
+}
+
+.main--card--background {
+  display: flex;
+  justify-content: center;
+}
+
+.main--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(184, 187, 233, 0.37);
+}
+
+.main--card--button {
+  margin: 0 2rem 2rem 2rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  box-shadow: 0 8px 32px 0 rgba(184, 187, 233, 0.37);
+}
+
+.list--grid {
+  background: linear-gradient(
+    90deg,
+    rgba(84, 0, 201, 0.6) 0%,
+    rgba(132, 7, 166, 0.6) 100%
+  );
+  margin: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 8px 20px 0 rgba(225, 0, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.prepared--food {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 204, 255, 0.6) 0%,
+    rgba(0, 255, 213, 0.6) 100%
+  );
+}
+
+.maintanance--coffee-shop {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 170, 0.6) 0%,
+    rgba(247, 0, 255, 0.6) 100%
+  );
+}
+
+.list--category--name {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.list--input {
+  margin-bottom: 0.2rem;
+}
+
+.list--input input {
+  padding: 6px;
+  -webkit-appearance: none;
+  background-color: #fafafa48;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+
+.list--input input:active,
+.list--input input:checked:active {
+  background-color: #fafafa81;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+.list--input input:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+.list--input input:checked:after {
+  content: "\2714";
+  font-size: 13.5px;
+  position: absolute;
+  top: -4px;
+  left: 1px;
+  color: #a200ff;
+}
