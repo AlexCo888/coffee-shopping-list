@@ -43,7 +43,9 @@ const App = () => {
         ? 5215581183870
         : 5215585784052;
     for (const item in list) {
-      listArray.push(item);
+      if (list[item]) {
+        listArray.push(item);
+      }
     }
     const listToString = listArray.toString(" ");
     const whatsAppList = listToString.replaceAll(",", ", ");
