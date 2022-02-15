@@ -30,7 +30,7 @@ const Accordion = ({
       {displayCategory[index].display && (
         <div>
           {itemList.map((item, index) => {
-            if (item.categoryId === id)
+            if (item.categoryId === id) {
               return (
                 <Checkbox
                   key={item.key}
@@ -41,6 +41,9 @@ const Accordion = ({
                   isChecked={isChecked}
                 />
               );
+            } else {
+              return null;
+            }
           })}
         </div>
       )}
