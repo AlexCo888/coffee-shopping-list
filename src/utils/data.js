@@ -1,4 +1,4 @@
-const partners = ["Alejandro", "Abel", "Juan"];
+const partners = ["Alejandro", "Abel", "Juan", "Lara", "González"];
 
 const categories = [
   {
