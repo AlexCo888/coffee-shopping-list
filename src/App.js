@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Accordion from "./components/Accordion";
-import { partners, categories, itemList } from "./utils/data";
+import React, { useState } from 'react';
+import Accordion from './components/Accordion';
+import { partners, categories, itemList } from './utils/data';
 
 const App = () => {
   const [displayCategory, setdisplayCategory] = useState(categories);
@@ -37,22 +37,22 @@ const App = () => {
   const sendList = (partner) => {
     const listArray = [];
     let partnerPhone =
-      partner === "Alejandro"
+      partner === 'Alejandro'
         ? 5215514528815
-        : partner === "Abel"
+        : partner === 'Abel'
         ? 5215581183870
-        : partner === "Lara"
+        : partner === 'Diego'
         ? 5215545605753
-        : partner === "González"
-        ? 5215617282139
+        : partner === 'Josue'
+        ? 52140081781
         : 5215585784052;
     for (const item in list) {
       if (list[item]) {
         listArray.push(item);
       }
     }
-    const listToString = listArray.toString(" ");
-    const whatsAppList = listToString.replaceAll(",", ", ");
+    const listToString = listArray.toString(' ');
+    const whatsAppList = listToString.replaceAll(',', ', ');
     const messageListUrl = `https://api.whatsapp.com/send/?phone=${partnerPhone}&text=${encodeURIComponent(
       `*Te comparto la lista de faltantes*:`
     )}%0a%0a${encodeURIComponent(whatsAppList)}
