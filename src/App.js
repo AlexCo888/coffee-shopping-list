@@ -44,7 +44,7 @@ const App = () => {
         : partner === 'Diego'
         ? 5215545605753
         : partner === 'Josue'
-        ? 52140081781
+        ? 5215540081781
         : 5215585784052;
     for (const item in list) {
       if (list[item]) {
